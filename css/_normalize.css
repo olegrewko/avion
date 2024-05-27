@@ -87,7 +87,7 @@ body {
   justify-content: center;
   width: 170px;
   height: 56px;
-  padding: 10px 32px 10px 32px;
+  padding: 10px 12px ;
   gap: 5px;
   color: var(--white);
   border: none;
@@ -97,6 +97,15 @@ body {
   text-align: left;
   background: var(--primary);
 
+}
+.btn--darker {
+  background: var(--dark-primary);
+ color: var(--light-grey);
+}
+.btn--light {
+  width: 178px;
+  background: var(--light-grey);
+  color: var(--dark-primary);
 }
 .products__btn {
   margin: 20px;
@@ -517,6 +526,9 @@ body {
   text-align: left;
   border: none;
   color: var(--dark-primary);
+}
+.stepper__btn--disabled {
+
 }
 /**************************************************************************
 .catalog__item
