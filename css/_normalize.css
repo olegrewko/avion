@@ -420,7 +420,7 @@ body {
 }
 .info{
   padding: 0px 0;
-
+  background: var(--light-grey);
 }
 .info__top {
   border-bottom: 1px sold var(--border-grey);
@@ -488,9 +488,36 @@ body {
 .info__chars-text {
   margin: 0;
 }
-/* .info__chars {
+.stepper {
   display: flex;
-} */
+  background: #fff;
+}
+.stepper__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-srink: 0;
+  width: 43px;
+  /* height: 56px; */
+  padding: 12px 16px;
+  gap: 10px;
+  opacity: 0px;
+  color: var(--dark-primary);
+  color: var(--dark-primary);
+  /* background: var(--light-grey); */
+}
+.stepper__input {
+  /* font-family: Satoshi; */
+  text-align: center;
+  width: calc (100% - 84px);
+  /* flex-grow: 1; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  border: none;
+  color: var(--dark-primary);
+}
 /**************************************************************************
 .catalog__item
  * Correct the font size and margin on `h1` elements within `section` and
