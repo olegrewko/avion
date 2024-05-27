@@ -422,8 +422,18 @@ body {
   padding: 0px 0;
 
 }
+.info__top {
+  border-bottom: 1px sold var(--border-grey);
+  padding-bottom: 28px;
+}
 .info__text{
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-right: 88px;
+  /* font-family: Clash Display; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.68px;
+  text-align: left;
 
 }
 .info__title{
@@ -433,6 +443,18 @@ body {
   font-weight: 400;
   line-height: 44.28px;
   text-align: left;
+  margin-bottom: 12px;
+}
+.info__subtitle {
+  /* font-family: Clash Display; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.68px;
+  text-align: left;
+
+}
+.info__descr {
+  width: 498px;
 
 }
 .info__content{
@@ -440,6 +462,35 @@ body {
   display: flex;
   gap: 65px;
 }
+.info__price {
+  /* font-family: Satoshi; */
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.4px;
+  text-align: left;
+
+}
+.info__chars-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.info__chars-item:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: calc(100% - 10px);
+  background-color: var(--border-grey);
+}
+.info__chars-text {
+  margin: 0;
+}
+/* .info__chars {
+  display: flex;
+} */
 /**************************************************************************
 .catalog__item
  * Correct the font size and margin on `h1` elements within `section` and
