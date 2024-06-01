@@ -39,7 +39,7 @@
 }
 @media (any-hover: hover) {
   .header__link:hover {
-    color: var(--primary);
+    color: var(--dark-primary);
   }
 }
 .header__link:active {

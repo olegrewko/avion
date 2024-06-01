@@ -152,7 +152,30 @@ body {
   line-height: 24px;
   text-align: left;
   background: var(--primary);
+  transition: var(--main-trs);
 
+}
+.btn:focus {
+  outline: none;
+}
+.btn:focus-visible {
+  outline: 2px dashed var(--dark-primary);
+  outline-offset: var(--outline-offset);
+}
+/* .btn:active {
+  background-color: var(--dark-primary);
+  color: var(--light-grey);
+} */
+
+@media(any-hover: hover) {
+  .btn:hover {
+    background-color: var(--light-grey);
+    color: var(--dark-primary);
+  }
+}
+.btn.active {
+  background-color: var(--dark-primary);
+  color: var(--light-grey);
 }
 .btn--darker {
   background: var(--dark-primary);
@@ -383,14 +406,27 @@ body {
 }
 .footer__copyright--dark-primary{
   color: var(--dark-primary);
+  transition: var(--main-trs);
 }
 .footer__link--dark-primary {
   text-decoration: none;
   color: var(--dark-primary);
 }
+@media(any-hover: hover) {
+  .footer__link--dark-primary:hover {
+    transition: var(--main-trs);
+    color: var(--primary);
+  }
+}
 .footer__link--light-grey {
   text-decoration: none;
   color: var(--light-grey);
+}
+@media(any-hover: hover) {
+  .footer__link--light-grey:hover {
+    transition: var(--main-trs);
+    color: var(--primary);
+  }
 }
 .grid {
   display: grid;

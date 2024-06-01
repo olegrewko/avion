@@ -13,8 +13,12 @@ a {
   line-height: 21.6px;
   text-align: left;
   color: rgba(114, 110, 141, 1);
-
-
+}
+@media(any-hover: hover) {
+  .nav__link:hover {
+    transition: var(--main-trs);
+    color: var(--dark-primary);
+  }
 }
 .nav__link:focus {
   outline: none;
