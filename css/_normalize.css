@@ -259,7 +259,7 @@ body {
   grid-column: 3 span;
   padding-top: 40px;
   padding-bottom: 40px;
-  /* margin: 20px; */
+
 }
 .product__link {
   //styleName: Headings / H4;
@@ -460,8 +460,17 @@ body {
   display: flex;
   align-items: center;
 }
-.social__link {
-
+.social__link svg {
+  fill: currentColor;
+}
+.social__link:focus-visible {
+  outline: 2px dashed #fff;
+  outline-offset: var(--outline-offset);
+}
+@media(any-hover: hover) {
+  .social__link:hover {
+    color: var(--primary);
+  }
 }
 /* hero-inner **************************************************************/
 .hero-inner {
