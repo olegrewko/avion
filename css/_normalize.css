@@ -1,5 +1,61 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Montserrat-ExtraBold'),
+   url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+   url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'),
+   url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+   url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat-SemiBold'),
+   url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+   url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat-Medium'),
+   url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+   url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'),
+   url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+   url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Montserrat-ExtraBold'),
+   url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+   url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-display: swap;
+}
+/* Document
+   ========================================================================== */
 /* Document
    ========================================================================== */
 /* .wrapper {
@@ -454,12 +510,16 @@ body {
   text-align: left;
   margin-bottom: 12px;
 }
+.info__item {
+  margin-bottom: 40px;
+}
 .info__subtitle {
-  /* font-family: Clash Display; */
+  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.68px;
   text-align: left;
+  padding-bottom: 15px;
 
 }
 .info__descr {
@@ -479,7 +539,13 @@ body {
   text-align: left;
 
 }
+.info__chars {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
 .info__chars-item {
+  /* margin-right: 40px; */
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -494,19 +560,52 @@ body {
   height: calc(100% - 10px);
   background-color: var(--border-grey);
 }
+.info__chars-caption {
+  margin: 0;
+  /* font-family: Satoshi; */
+  /* font-family: Clash Display; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.22px;
+  text-align: left;
+
+
+}
 .info__chars-text {
   margin: 0;
+  /* font-family: Satoshi; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+
 }
 .stepper {
   display: flex;
   background: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--border-grey);
+  width: 122px;
+}
+.cart__stepper {
+
+  /* background: var(--light-grey); */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+.stepper__btn--disabled {
+  pointer-events: none;
+  color: var( --border-grey);
 }
 .stepper__btn {
+
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-srink: 0;
-  width: 43px;
+  /* flex-srink: 0; */
+  width: 42px;
   /* height: 56px; */
   padding: 12px 16px;
   gap: 10px;
@@ -516,20 +615,145 @@ body {
   /* background: var(--light-grey); */
 }
 .stepper__input {
+  /* flex-srink: 0; */
   /* font-family: Satoshi; */
   text-align: center;
   width: calc (100% - 84px);
+  /* width: 50px; */
   /* flex-grow: 1; */
   font-size: 16px;
   font-weight: 400;
   line-height: 21.6px;
-  text-align: left;
+
   border: none;
   color: var(--dark-primary);
 }
 .stepper__btn--disabled {
 
 }
+.cart {
+  padding: 84px 0;
+  background-color: var(--light-grey);
+}
+.cart__content {
+  padding: 72px 63px;
+  background-color: #fff;
+}
+.cart__table {
+  border-bottom: 1px solid var(--light-grey);
+  padding-bottom: 28px;
+  margin-bottom: 20px;
+}
+.cart__bottom-info {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.cart__subtotal {
+  //styleName: Headings / H4;
+/* font-family: Clash Display; */
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: right;
+
+}
+.cart__subtotal--price {
+
+/* font-family: Clash Display; */
+  margin-left: 16px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: right;
+
+}
+.cart__btn-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart__row {
+  margin-bottom: 32px;
+}
+.cart__row--heading {
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--light-grey);
+  /* font-family: Clash Display; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.68px;
+  text-align: left;
+
+}
+.cart__title {
+  /* font-family: Clash Display; */
+  margin: 0;
+  margin-bottom: 8px;
+  //styleName: Headings / H4;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+
+
+}
+.cart__descr {
+  /* font-family: Satoshi; */
+  margin: 0;
+  margin-bottom: 8px;
+  //styleName: Body/Small;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+
+
+}
+.cart__price {
+  /* font-family: Satoshi; */
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+
+}
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 7px;
+}
+.cart__col {
+  grid-column: 6 span;
+
+}
+.cart__info {
+  max-width: 240px;
+
+}
+.cart__col--image {
+  grid-column: 1 span;
+
+}
+.cart__col--info {
+  grid-column: 5 span;
+  padding-left: 17px;
+
+}
+.cart__col--quantity {
+  grid-column: 2 span;
+  padding-left: 75px;
+}
+.cart__col--total {
+  grid-column: 2 span;
+  padding-left: 75px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 /**************************************************************************
 .catalog__item
  * Correct the font size and margin on `h1` elements within `section` and

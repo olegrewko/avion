@@ -137,49 +137,29 @@
         </div>
       </div>
     </header>
-    <section class="info">
+    <section class="cart">
+      <h1 class="visually-hidden">Cart</h1>
       <div class="container">
-        <div class="info__content">
-          <div class="info__image">
-            <img
-              src="img/pi.jpg"
-              srcset="img/pi2x.jpg"
-              alt="img/pi.jpg"
-              aria-hidden
-              class="info"
-              width="607"
-              height="661"
-            />
-          </div>
-          <div class="info__text">
-            <div class="info__top">
-              <h1 class="info__title">The Dandy Chair</h1>
-              <div class="info__price">&pound;250</div>
+        <div class="cart__content">
+          <div class="cart__table">
+            <div class="cart__row cart-grid cart__row--heading  cart-grid--heading">
+              <div class="cart__col">Product</div>
+              <div class="cart__col cart__col--quantity ">Quantity</div>
+              <div class="cart__col cart__col--total">Total</div>
             </div>
-            <div class="info__item">
-              <h2 class="info__subtitle">Product description</h2>
-              <p class="info__descr">A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.</p>
-            </div>
-            <div class="info__item">
-              <h2 class="info__subtitle">Dimensions</h2>
-              <dl class="info__chars">
-                <div class="info__chars-item">
-                  <dt class="info__chars-caption">Height</dt>
-                  <dd class="info__chars-text">110см</dd>
+            <div class="cart__row cart-grid ">
+              <div class="cart__col cart__col--image">
+                <img src="./img/p1.jpg" width="109" height="134" alt="" class="cart__image"></div>
+              <div class="cart__col cart__col--info">
+                <div class="cart__info">
+                  <h2 class="cart__title">Graystone vase</h2>
+                  <p class="cart__descr">A timeless ceramic vase with a tri color grey glaze.</p>
+                  <span class="cart__price">&pound;250</span>
                 </div>
-                <div class="info__chars-item">
-                  <dt class="info__chars-caption">Width</dt>
-                  <dd class="info__chars-text">200см</dd>
-                </div>
-                <div class="info__chars-item">
-                  <dt class="info__chars-caption">Depth</dt>
-                  <dd class="info__chars-text">310см</dd>
-                </div>
-              </dl>
-            </div>
-            <div class="info__item">
-              <h2 class="info__subtitle">Quantity</h2>
-              <div class="stepper">
+              </div>
+              <div class="cart__col cart__col--quantity">
+                <div class="cart__stepper">
+                  <div class="stepper">
                 <button
                   class="btn-reset stepper__btn  stepper__btn--minus"
                   aria-label="Decrease quantity"
@@ -190,195 +170,60 @@
                   aria-label="Increase quantity"
                 >+</button>
               </div>
+                </div>
+              </div>
+              <div class="cart__col cart__col--total">
+                <span class="cart__total">&pound;500</span>
+                </div>
             </div>
-            <div class="info__btns">
-              <button class="btn btn--darker">Add to cart</button>
-              <button class="btn btn--light">Save to favorites</button>
-
+            <div class="cart__row cart-grid ">
+              <div class="cart__col cart__col--image">
+                <img src="./img/p1.jpg" width="109" height="134" alt="" class="cart__image"></div>
+              <div class="cart__col cart__col--info">
+                <div class="cart__info">
+                  <h2 class="cart__title">Graystone vase</h2>
+                  <p class="cart__descr">A timeless ceramic vase with a tri color grey glaze.</p>
+                  <span class="cart__price">&pound;250</span>
+                </div>
+              </div>
+              <div class="cart__col cart__col--quantity">
+                <div class="cart__stepper">
+                  <div class="stepper">
+                <button
+                  class="btn-reset stepper__btn  stepper__btn--minus"
+                  aria-label="Decrease quantity"
+                >-</button>
+                <input type="number" value="1" min="1" max="109" class="stepper__input" />
+                <button
+                  class="btn-reset stepper__btn stepper__btn--plus"
+                  aria-label="Increase quantity"
+                >+</button>
+              </div>
+                </div>
+              </div>
+              <div class="cart__col cart__col--total">
+                <span class="cart__total">&pound;500</span>
+                </div>
+            </div>
+          </div>
+          <div class="cart__bottom">
+            <div class="cart__bottom-info">
+              <p class="cart__text">
+                Taxes and shipping are calculated at checkout
+              </p>
+              <div class="cart__subtotal">
+                Subtotal <span class="cart__subtotal--price">&pound;500</span>
+              </div>
+            </div>
+            <div class="cart__btn-wrap">
+              <a href="#" class="cart__link btn btn--darker">
+                Go to checkout
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="benefit">
-      <div class="container">
-        <h3 class="benefit__title">What makes our brand different</h3>
-        <ul class="list-reset benefit__list">
-          <li class="benefit__item benefit__item--next">
-            <img
-              src="/svg/delivery.svg"
-              alt="/svg/delivery.svg"
-              class="benefit__image"
-            />
-            <h5 class="benefit__subtitle">Next day as standard</h5>
-            <p class="benefit__descr">
-              Order before 3pm and get your order the next day as standard
-            </p>
-          </li>
-          <li class="benefit__item benefit__item--next">
-            <img
-              src="/svg/Checkmark--outline.svg"
-              alt="/svg/Checkmark--outline.svg"
-              class="benefit__image"
-            />
-            <h5 class="benefit__subtitle">Next day as standard</h5>
-            <p class="benefit__descr">
-              Order before 3pm and get your order the next day as standard
-            </p>
-          </li>
-          <li class="benefit__item benefit__item--next">
-            <img
-              src="/svg/Purchase.svg"
-              alt="/svg/Purchase.svg"
-              class="benefit__image"
-            />
-            <h5 class="benefit__subtitle">Next day as standard</h5>
-            <p class="benefit__descr">
-              Order before 3pm and get your order the next day as standard
-            </p>
-          </li>
-          <li class="benefit__item benefit__item--next">
-            <img
-              src="/svg/Sprout.svg"
-              alt="/svg/Sprout.svg"
-              class="benefit__image"
-            />
-            <h5 class="benefit__subtitle">Next day as standard</h5>
-            <p class="benefit__descr">
-              Order before 3pm and get your order the next day as standard
-            </p>
-          </li>
-        </ul>
       </div>
-    </section>
-
-    <section class="products-popular">
-      <div class="container">
-        <h2 class="products__title">Our popular products</h2>
-        <ul class="list-reset products__item">
-          <article class="products__item--big">
-            <div class="product__image">
-              <img
-                src="/img/p5.jpg"
-                alt="/img/p5.jpg"
-                aria-hidden="true"
-                width="630"
-                height="375"
-                loading="lazy"
-              />
-            </div>
-            <div class="product__content">
-              <h5 class="product__title">
-                <a href="#" class="product__link">The Dandy chair</a>
-              </h5>
-              <span class="product__price">&pound;250</span>
-            </div>
-          </article>
-          <article class="product">
-            <div class="product__image">
-              <img
-                src="/img/p1.jpg"
-                alt="/img/p1.jpg"
-                aria-hidden="true"
-                width="305"
-                height="375"
-                loading="lazy"
-              />
-            </div>
-            <div class="product__content">
-              <h5 class="product__title">
-                <a href="#" class="product__link">The Dandy chair</a>
-              </h5>
-              <span class="product__price">&pound;250</span>
-            </div>
-          </article>
-          <!-- <article class="product">
-              <div class="product__image">
-                <img src="/img/p3.jpg" alt="/img/p2.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
-              </div>
-              <div class="product__content">
-                <h5 class="product__title">
-                  <a href="#" class="product__link">The Silky Vase</a>
-                </h5>
-                <span class="product__price">&pound;125</span>
-              </div>
-            </article> -->
-          <article class="product">
-            <div class="product__image">
-              <img
-                src="/img/p6.jpg"
-                alt="/img/p1.jpg"
-                aria-hidden="true"
-                width="305"
-                height="375"
-                loading="lazy"
-              />
-            </div>
-            <div class="product__content">
-              <h5 class="product__title">
-                <a href="#" class="product__link">The Dandy chair</a>
-              </h5>
-              <span class="product__price">&pound;250</span>
-            </div>
-          </article>
-        </ul>
-        <div class="centered">
-          <a href="" class="btn products__btn">View more</a>
-        </div>
-      </div>
-    </section>
-    <section class="news-letter">
-      <div class="container">
-        <div class="news__content centered">
-          <h2 class="news-letter__title">Join the club and get the benefits</h2>
-          <p class="news-letter__descr">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore
-            omnis nihil ad tempora aut amet ullam aliquid.
-          </p>
-          <form action="#" method="POST" class="form news-letter__form">
-            <input
-              type="email"
-              name="email"
-              class="form__input"
-              placeholder="Email"
-            />
-            <button class="btn btn-darker form__btn" type="submit">
-              Sign up
-            </button>
-          </form>
-        </div>
-        <!-- <form action="#" class="form news-letter__form"></form> -->
-      </div>
-    </section>
-    <section class="about container">
-      <!-- <div class="container"> -->
-      <div class="about__info">
-        <div class="about__content">
-          <h2 class="about__title">
-            From a studio in London to a global brand with over 400 outlets
-          </h2>
-          <p class="about__descr">
-            When we started Avion, the idea was simple. Make high quality
-            furniture affordable and available for the mass market. Handmade,
-            and lovingly crafted furniture and homeware is what we live, breathe
-            and design so our Chelsea boutique become the hotbed for the London
-            interior design community.
-          </p>
-        </div>
-      </div>
-      <div class="about__image">
-        <img
-          src="img/a1.jpg"
-          alt=""
-          alt="/img/p5.jpg"
-          aria-hidden="true"
-          width="750"
-          height="603"
-          loading="lazy"
-        />
-      </div>
-      <!-- </div> -->
     </section>
     <footer class="footer">
       <div class="container">
