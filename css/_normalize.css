@@ -458,6 +458,7 @@ body {
 }
 .footer__column {
   grid-column: 2 span;
+  margin-bottom: 20px;
 }
 .footer__column--big {
   grid-column: 6 span;

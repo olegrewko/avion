@@ -51,6 +51,12 @@
 
 }
 @media(max-width: 768px) {
+   .header__buttons {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
    .form__btn {
     width: 150px;
     padding: 5px 5px;
