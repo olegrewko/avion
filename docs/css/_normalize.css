@@ -509,7 +509,7 @@ body {
   min-height: 209px;
 }
 .hero-inner__background {
-  background-image: url("/img/Page_Headers.jpg");
+  background-image: url("../img/Page_Headers.jpg");
 }
 .hero-inner__title {
   margin: 0;

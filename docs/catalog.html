@@ -6,6 +6,7 @@
     <title>Avion</title>
     <link rel="stylesheet" href="css/_normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+
   </head>
 
   <body class="page__body">
@@ -14,7 +15,7 @@
         <div class="header__top">
           <div class="container header__container header__top-container">
             <a href="./index.html" class="logo">
-              <img src="img/Avion.png" alt="logo.svg" class="logo" />
+              <img src="./img/Avion.png" alt="logo.svg" class="logo" />
             </a>
             <div class="header__details">
               <ul class="list-reset header__list">
@@ -101,6 +102,12 @@
                     />
                   </svg>
                 </button>
+                 <button class="btn-reset burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+              </button>
               </div>
             </div>
           </div>
@@ -213,7 +220,7 @@
                   <article class="product">
                 <div class="product__image">
                   <a href="./product.html">
-                  <img src="/img/p1.jpg" alt="/img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
+                  <img src="./img/p1.jpg" alt="./img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
                   </a>
                 </div>
                 <div class="product__content">
@@ -227,7 +234,7 @@
                 <li class="catalog__item">
                   <article class="product">
                 <div class="product__image">
-                  <img src="/img/p2.jpg" alt="/img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
+                  <img src="./img/p2.jpg" alt="./img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
                 </div>
                 <div class="product__content">
                   <h5 class="product__title">
@@ -240,7 +247,7 @@
                 <li class="catalog__item">
                   <article class="product">
                 <div class="product__image">
-                  <img src="/img/p3.jpg" alt="/img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
+                  <img src="./img/p3.jpg" alt="./img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
                 </div>
                 <div class="product__content">
                   <h5 class="product__title">
@@ -253,7 +260,7 @@
                 <li class="catalog__item">
                   <article class="product">
                 <div class="product__image">
-                  <img src="/img/p4.jpg" alt="/img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
+                  <img src="./img/p4.jpg" alt="./img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
                 </div>
                 <div class="product__content">
                   <h5 class="product__title">
@@ -266,7 +273,7 @@
                 <li class="catalog__item">
                   <article class="product">
                 <div class="product__image">
-                  <img src="/img/p5.jpg" alt="/img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
+                  <img src="./img/p5.jpg" alt="./img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
                 </div>
                 <div class="product__content">
                   <h5 class="product__title">
@@ -279,7 +286,7 @@
                 <li class="catalog__item">
                   <article class="product">
                 <div class="product__image">
-                  <img src="/img/p6.jpg" alt="/img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
+                  <img src="./img/p6.jpg" alt="./img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
                 </div>
                 <div class="product__content">
                   <h5 class="product__title">
@@ -292,7 +299,7 @@
                 <li class="catalog__item">
                   <article class="product">
                 <div class="product__image">
-                  <img src="/img/p7.jpg" alt="/img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
+                  <img src="./img/p7.jpg" alt="./img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
                 </div>
                 <div class="product__content">
                   <h5 class="product__title">
@@ -305,7 +312,7 @@
                 <li class="catalog__item">
                   <article class="product">
                 <div class="product__image">
-                  <img src="/img/p8.jpg" alt="/img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
+                  <img src="./img/p8.jpg" alt="./img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
                 </div>
                 <div class="product__content">
                   <h5 class="product__title">
@@ -318,7 +325,7 @@
                 <li class="catalog__item">
                   <article class="product">
                 <div class="product__image">
-                  <img src="/img/p9.jpg" alt="/img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
+                  <img src="./img/p9.jpg" alt="./img/p1.jpg" aria-hidden="true" width="305" height="375" loading="lazy">
                 </div>
                 <div class="product__content">
                   <h5 class="product__title">
@@ -583,5 +590,16 @@
       </footer>
 
     </div>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const burgerEl = document.querySelector(".burger");
+  if (burgerEl) {
+    const menuEl = document.querySelector(".header__bottom");
+    burgerEl.addEventListener("click", () => {
+      menuEl.classList.toggle("header__bottom--active");
+    });
+  }
+});
+</script>
   </body>
 </html>
