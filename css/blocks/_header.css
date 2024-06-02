@@ -7,12 +7,12 @@
 .header__top-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .header__details {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 .header__button {
   display: flex;
@@ -20,7 +20,7 @@
   justify-content: center;
 }
 .header__buttons {
-  margin-left: 40px;
+  margin-left: 30px;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -28,7 +28,7 @@
 .header__list {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 15px;
 }
 .header__link:focus {
   outline: none;
