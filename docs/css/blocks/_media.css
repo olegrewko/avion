@@ -2,6 +2,15 @@
   .info__image img {
     width: 500px;
   }
+  .hero-inner__title,
+  .hero-inner__text,
+  .hero-inner__content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  text-align: center;
+
+}
 }
 @media(max-width: 1024px) {
   .header__bottom {
@@ -51,6 +60,14 @@
 
 }
 @media(max-width: 768px) {
+  .info__content{
+  padding-top: 30px;
+  flex-direction: column;
+  gap: 35px;
+ }
+  .hero-inner__background {
+  background-image: url("../../img/Page_Headers.png");
+}
    .header__buttons {
   margin-left: 20px;
   display: flex;
@@ -151,11 +168,11 @@
   /* flex-srink: 0; */
   width: 100%;
 }
- .info__content{
+ /* .info__content{
   padding-top: 30px;
   flex-direction: column;
   gap: 35px;
-}
+} */
  .cart__content {
   padding: 20px;
  }
