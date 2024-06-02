@@ -261,6 +261,14 @@ body {
   padding-bottom: 40px;
 
 }
+/* @media(max-width: 400px) {
+  .product {
+  grid-column: 12 span;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+} */
 .product__link {
   //styleName: Headings / H4;
   /* font-family: Clash Display; */

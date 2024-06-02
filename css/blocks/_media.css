@@ -50,6 +50,14 @@
   padding-bottom: 40px;
 
 }
+@media(max-width: 500px) {
+  .product {
+  grid-column: 12 span;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+}
  .product__image {
   width: 100%;
  }
