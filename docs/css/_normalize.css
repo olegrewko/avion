@@ -496,8 +496,8 @@ body {
 .hero-inner {
   /* display: flex;
   align-items: flex-end;
-  padding-bottom: 36px;
-  min-height: 209px; */
+  padding-bottom: 36px; */
+  min-height: 209px;
   background-position: center;
   background-size: cover;
   background-repeat: norepeat;
