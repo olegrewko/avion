@@ -421,6 +421,16 @@
           </div>
         </div>
       </footer>
-
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const burgerEl = document.querySelector(".burger");
+  if (burgerEl) {
+    const menuEl = document.querySelector(".header__bottom");
+    burgerEl.addEventListener("click", () => {
+      menuEl.classList.toggle("header__bottom--active");
+    });
+  }
+});
+</script>
 </body>
 </html>
