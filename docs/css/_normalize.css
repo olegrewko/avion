@@ -186,6 +186,13 @@ body {
   background: var(--light-grey);
   color: var(--dark-primary);
 }
+@media(any-hover: hover) {
+  .btn--light:hover {
+    background-color: var(--dark-primary);
+    color: var(--light-grey);
+  }
+}
+
 .products__btn {
   margin: 20px;
   color: var(--dark-primary);
@@ -213,7 +220,7 @@ body {
 .benefit__title {
   text-align: center;
   //styleName: Headings / H3;
-  /* font-family: Clash Display; */
+  font-family: Montserrat;
   font-size: 24px;
   font-weight: 400;
   line-height: 33.6px;
@@ -312,12 +319,15 @@ body {
 
 }
 .news-letter__title {
+  font-family: Montserrat;
    width: 570px;
    height: 50px;
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 400;
   line-height: 50.4px;
   /* text-align: center; */
+  margin-top: 68px;
+  margin-bottom: 16px;
   margin: 0 auto;
   color: var(--dark-primary);
 }
@@ -655,7 +665,6 @@ body {
 }
 .cart__stepper {
 
-  /* background: var(--light-grey); */
   margin-top: 10px;
   margin-bottom: 10px;
   width: 150px;
@@ -716,11 +725,13 @@ body {
 }
 .cart__subtotal {
   //styleName: Headings / H4;
-/* font-family: Clash Display; */
+  font-family: Montserrat;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   text-align: right;
+  //styleName: Headings / H4;
+
 
 }
 .cart__subtotal--price {
@@ -818,7 +829,14 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-
+.products__item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.news-letter__form {
+  margin-top: 72px;
+}
 /**************************************************************************
 .catalog__item
  * Correct the font size and margin on `h1` elements within `section` and
