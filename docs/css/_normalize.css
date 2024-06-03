@@ -306,13 +306,16 @@ body {
   color: var(--dark-primary);
 }
 .news-letter {
-  padding: 0 40px;
+  padding: 0 ;
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   background: var(--light-grey);
 }
 .news-letter__content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
   background: #fff;
@@ -322,7 +325,7 @@ body {
   font-family: Montserrat;
    width: 570px;
    height: 50px;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 50.4px;
   /* text-align: center; */
@@ -332,7 +335,7 @@ body {
   color: var(--dark-primary);
 }
 .news-letter__descr {
-  width: 470px;
+  width: 570px;
   height: 48px;
   margin-bottom: 50px;
   font-size: 16px;
@@ -344,8 +347,9 @@ body {
 .form__input {
   width: 354px;
   height: 56px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border: 1px dashed var(--light-grey);
   /* font-family: Satoshi; */
   font-size: 16px;
   font-weight: 400;

@@ -15,7 +15,7 @@
  --main-trs: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
 --outline: 2px dashed currentcoolor;
 --outline-offset: 2px;
-  --second: #BE52F2;
+  /* --second: #BE52F2;
   --second-hover: #DBA5F5;
   --success: #00C48C;
   --success-hover: #7DDFC3;
@@ -24,5 +24,5 @@
   --warning: #FFA26B;
   --warning-hover: #FFC7A6;
   --danger: #FF647C;
-  --danger-hover: #FDAFBB;
+  --danger-hover: #FDAFBB; */
 }
