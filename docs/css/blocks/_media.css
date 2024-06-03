@@ -66,9 +66,22 @@
 
 }
 @media(max-width: 768px) {
-  /* .info__image {
-    height: 380px;
-  } */
+  .catalog__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .filters {
+    display: flex;
+    justify-content: space-around;
+  }
+  .catalog__column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .catalog__products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
   .info__content{
   padding-top: 30px;
   flex-direction: column;
